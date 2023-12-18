@@ -1,0 +1,14 @@
+<div class="header">
+    <img routerLink="/" src="../../assets/logo.jpeg" alt="Logo">
+    <ul>
+        <li>
+            <a (click)="setActive()" [ngClass]="notActive" class="header-item" href="#about">About Us</a>
+        </li>
+        <li>
+            <a (click)="setActive2()" [ngClass]="notActive2" class="header-item" href="#services">Services</a>
+        </li>
+        <li>
+            <a routerLink="/contact" class="estimate" href="#">FREE ESTIMATE NOW!</a>
+        </li>
+    </ul>
+</div>

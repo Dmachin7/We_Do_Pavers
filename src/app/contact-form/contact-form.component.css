@@ -14,6 +14,27 @@
     /* box-shadow: 5px 0px 10px 0px rgba(0, 0, 0, 1); */
 }
 
+.container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 80%;
+    background-color: white;
+    outline: 1px solid black;
+    border-radius: 30px;
+    position: absolute;
+    top: 10%;
+}
+
+.show {
+    display: block;
+}
+
+.dontShow {
+    display: none;
+}
+
 .inner-container {
     margin: 10px;   
     width: 100%;
@@ -73,4 +94,10 @@ input {
 
 h2 {
     font-weight: 200;
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        width: 80%;
+    }
 }

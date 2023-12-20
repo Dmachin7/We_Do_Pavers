@@ -9,6 +9,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { MainComponent } from './main/main.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { ServicesComponent } from './services/services.component';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ServicesComponent } from './services/services.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NoopAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

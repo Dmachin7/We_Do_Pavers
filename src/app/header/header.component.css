@@ -77,3 +77,17 @@ a {
     transition: .3s ease-out;
     border-radius: 5px;
 }
+@media screen and (min-width: 501px) {
+    
+}
+
+@media screen and (max-width: 500px) {
+    .header-item {
+        display: none;
+    }
+
+    .estimate {
+        padding: .5rem;
+        font-size: 15px;
+    }
+}

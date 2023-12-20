@@ -10,6 +10,7 @@ import { MainComponent } from './main/main.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { ServicesComponent } from './services/services.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
     AboutUsComponent,
     MainComponent,
     ContactFormComponent,
-    ServicesComponent
+    ServicesComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

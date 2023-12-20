@@ -40,7 +40,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 100%;
+    width: 80%;
     height: 100%;
     /* border-radius: 50px; */
     /* -webkit-box-shadow: 1px 10px 14px 1px rgba(0,0,0,0.52);  */
@@ -48,18 +48,24 @@
     margin-top: 0;
     background-color: white;
     color: white;
-    transition: 200ms ease-in-out;  
+    transition: .3s ease-in-out;  
     font-size: 40px;
 }
 
+
 .inner-container:hover {
     font-size: 45px;
-    transition: 200ms ease-in-out;
+    width: 100%;
+    transition: .3s ease-in-out;
 }
 
 .inner-container p {
     margin: 10px;
+    font-size: 25px;
+    display: none;
+    transition: .3s ease-in-out;
 }
+
 
 
 .service1 {

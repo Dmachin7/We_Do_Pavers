@@ -86,4 +86,5 @@ export class CarouselComponent implements OnInit {
       console.log(this.notActive)
   }
 
+
 }

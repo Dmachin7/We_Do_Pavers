@@ -12,6 +12,9 @@ import { ServicesComponent } from './services/services.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { FooterComponent } from './footer/footer.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { PaverComponent } from './paver/paver.component';
+import { CopingComponent } from './coping/coping.component';
+import { PlasterComponent } from './plaster/plaster.component';
 
 
 @NgModule({
@@ -23,7 +26,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MainComponent,
     ContactFormComponent,
     ServicesComponent,
-    FooterComponent
+    FooterComponent,
+    PaverComponent,
+    CopingComponent,
+    PlasterComponent
   ],
   imports: [
     BrowserModule,

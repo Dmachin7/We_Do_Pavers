@@ -9,7 +9,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { MainComponent } from './main/main.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { ServicesComponent } from './services/services.component';
-import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { BrowserAnimationsModule, NoopAnimationsModule, provideAnimations } from '@angular/platform-browser/animations';
 import { FooterComponent } from './footer/footer.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PaverComponent } from './paver/paver.component';
@@ -33,12 +33,14 @@ import { PlasterComponent } from './plaster/plaster.component';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     NoopAnimationsModule,
     FormsModule,
     ReactiveFormsModule
+
   ],
-  providers: [],
+  providers: [ provideAnimations() ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

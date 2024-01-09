@@ -25,13 +25,13 @@ export class CarouselComponent implements OnInit {
       "image": "./assets/paver3.jpeg"
     },
     {
-      "image": "./assets/paver.jpeg"
+      "image": "./assets/plaster/Plaster10.jpeg"
     },
     {
-      "image": "./assets/paver2.jpeg"
+      "image": "./assets/paver/Paver7.jpeg"
     },
     {
-      "image": "./assets/paver3.jpeg"
+      "image": "./assets/plaster/Plaster3.jpeg"
     }
   ]
 

@@ -27,7 +27,9 @@ export class ContactFormComponent implements OnInit{
       address: '',
       description: ''
     }) 
+    window.scrollTo(0,0)
   }
+
 
   async send() {
     emailjs.init('ycQAiMak6B7f6QFfO')

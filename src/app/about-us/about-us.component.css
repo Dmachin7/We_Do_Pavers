@@ -110,6 +110,14 @@ html {
         justify-content: center;
     }
 
+    .hidden {
+        display: none;
+    }
+
+    .show {
+        display: block;
+    }
+
     .inner-container2 h2 {
         font-size: 20px;
     }

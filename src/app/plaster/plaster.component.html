@@ -1,6 +1,24 @@
 <div class="container">
     <button routerLink="/">Back To Home</button>
-    <div *ngFor="let image of images" class="image">
-        <img src="{{image.image}}" alt="image">
+    <div class="info">
+        <h2>What is Pool Plaster?</h2>
+        <p>
+            Immerse your pool in the epitome of elegance with our meticulous pool plaster application, where every surface is transformed into a canvas of seamless sophistication. Crafted from premium materials, our pool plaster elevates aquatic spaces into realms of both functional excellence and aesthetic allure.
+        </p>
     </div>
+    <div class="image">
+        <img src="{{images[2].image}}" alt="image">
+    </div>
+    <div class="expanded">
+        <h2>Transform your Home Today!</h2>
+    </div>
+    <div class="image">
+        <img src="{{images[3].image}}" alt="image">
+    </div>
+    <div class="image">
+        <img src="{{images[0].image}}" alt="image">
+    </div>
+
+
+  
 </div>

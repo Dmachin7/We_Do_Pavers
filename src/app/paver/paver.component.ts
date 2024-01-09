@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { animate, state } from '@angular/animations';
 @Component({
   selector: 'app-paver',
   templateUrl: './paver.component.html',

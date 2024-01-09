@@ -1,6 +1,26 @@
 <div class="container">
     <button routerLink="/">Back To Home</button>
-    <div *ngFor="let image of images" class="image">
-        <img src="{{image.image}}" alt="image">
+  
+    <div class="info">
+        <h2>What are Pavers?</h2>
+        <p>
+            Elevate your home with durable, versatile pavers that enhance aesthetics and functionality in driveways, patios, and walkways. Choose from various colors and patterns, ensuring enduring beauty and added property value with minimal maintenance.
+        </p>
     </div>
+    <div class="image">
+        <img src="{{images[4].image}}" alt="image">
+    </div>
+    <div class="expanded">
+        <h2>Transform your Home Today!</h2>
+    </div>
+    <div class="image">
+        <img src="{{images[5].image}}" alt="image">
+    </div>
+    <div class="image">
+        <img src="{{images[3].image}}" alt="image">
+    </div>
+
+
+  
+
 </div>

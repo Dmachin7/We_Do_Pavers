@@ -1,3 +1,4 @@
+
 .container {
     position: absolute;
     top: 95%;
@@ -36,6 +37,7 @@ html {
     justify-content: center;
     align-items: center;
     font-size: 15px;
+    
 }
 .inner-container2 h2 {
     margin: 0 auto;

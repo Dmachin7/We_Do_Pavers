@@ -51,6 +51,7 @@ a {
     transition: 200ms ease-in-out;
 }
 
+
 .header-item:hover {
     color: black;
     transition: 200ms ease-in-out;
@@ -89,5 +90,22 @@ a {
     .estimate {
         padding: .5rem;
         font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 395px) {
+    .estimate {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 356px) {
+    .estimate {
+        margin-right: 20px;
+    }
+
+    .header img {
+        width: 150px;
+        height: 100px;
     }
 }

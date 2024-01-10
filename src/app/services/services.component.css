@@ -54,6 +54,8 @@
 }
 
 
+
+
 .inner-container:hover {
     font-size: 45px;
     width: 100%;
@@ -153,5 +155,11 @@
     .inner-container:hover {
         font-size: 25px;
         transition: 200ms ease-in-out;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .container {
+        top: 1700px;
     }
 }

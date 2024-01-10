@@ -16,6 +16,9 @@ export class CarouselComponent implements OnInit {
 
   images: any[] = [
     {
+      "image": "./assets/paver/Paver7.jpeg"
+    },
+    {
       "image": "./assets/paver.jpeg"
     },
     {
@@ -26,9 +29,6 @@ export class CarouselComponent implements OnInit {
     },
     {
       "image": "./assets/plaster/Plaster10.jpeg"
-    },
-    {
-      "image": "./assets/paver/Paver7.jpeg"
     },
     {
       "image": "./assets/plaster/Plaster3.jpeg"

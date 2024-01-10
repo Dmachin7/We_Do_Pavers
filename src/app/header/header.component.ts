@@ -1,11 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
 })
-export class HeaderComponent {
+export class HeaderComponent{
+  
+
 
   notActive = "notActive"
   notActive2 = "notActive"
@@ -18,4 +20,5 @@ export class HeaderComponent {
     this.notActive2 = 'active'
     this.notActive = 'notActive'
   }
+
 }

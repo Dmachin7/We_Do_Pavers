@@ -86,3 +86,9 @@ a {
 
     
 }
+
+@media screen and (max-width: 375px) {
+    .container {
+        top: 2400px;
+    }
+}

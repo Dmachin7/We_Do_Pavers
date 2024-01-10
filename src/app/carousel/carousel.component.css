@@ -10,9 +10,10 @@
     justify-content: center;
     align-items: center;
     padding: 0;
-    /* overflow: hidden; */
+    overflow: hidden;
     /* outline: 1px solid red; */
   }
+
 
   .Carousel-content {
     /* background-color: gray; */
@@ -23,7 +24,6 @@
     justify-content: flex-start;
     padding: 0;
     /* outline: 1px solid red; */
-    overflow: hidden;
     transform: translateX(-10px);
     transition: transform 3s ease-in-out;
     object-fit: cover;
@@ -41,6 +41,7 @@
     height: 100%;
     width: 100vw;
     object-fit: cover;
+    object-position: center;
     scale: 1;
   }
   
@@ -132,6 +133,7 @@
     }
 
     .right {
+      display: none;
         height: 50px;
         width: 50px;
         right: 10px;
@@ -139,6 +141,7 @@
     }
 
     .left {
+      display: none;
         height: 50px;
         width: 50px;
         left: 10px;
@@ -172,5 +175,16 @@
         transform: translateX(-538vw);
         transition: transform 1s ease-in-out;
       }
+      .Carousel-content {
+        overflow-y: hidden;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .Carousel-item img {
+        scroll-snap-align: start;
+      }
+
 
   }

@@ -3,7 +3,7 @@
     position: absolute;
     top: 10%;
     left: 0;
-    height: 850px;
+    height: 1000px;
     width: 100vw;
     display: flex;
     flex-direction: row;
@@ -129,8 +129,14 @@
 
   @media screen and (max-width: 500px) {
     .Carousel {
-        height: 550px;
+        height: 100%;
+        top: 0;
     }
+
+    .Carousel-item {
+      padding: 1rem;
+    }
+
 
     .right {
       display: none;
@@ -184,6 +190,7 @@
 
       .Carousel-item img {
         scroll-snap-align: start;
+        height: 100%;
       }
 
 

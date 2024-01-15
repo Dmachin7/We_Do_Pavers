@@ -1,14 +1,9 @@
-<div class="form-container">
+<div id="form" class="form-container">
+<div class="container2">
+    <h1>Transform your home today!</h1>
+</div>
 <form  [formGroup]="form" class="container" (submit)="send()">
-    <h2>Contact Form</h2>
-    <div class="inner-container">
-        <h2>When are you available?</h2>
-        <input formControlName="availability" type="text" placeholder="i.e. Mon-Fri / 9am-5pm">
-    </div>
-    <div class="inner-container">
-        <h2>How did you hear about us?</h2>
-        <input formControlName="hear" type="text" placeholder="i.e. Google, Family, Friend">
-    </div>
+    <!-- <h2 class="title">Contact Form</h2> -->
     <div class="inner-container">
         <h2>First Name</h2>
         <input formControlName="from_name" formControlName="first_name"  type="text" placeholder="Enter your First Name">
@@ -30,10 +25,21 @@
         <input formControlName="address"  type="text" placeholder="Enter your Address">
     </div>
     <div class="inner-container">
-        <h2>Description of Project</h2>
-        <input formControlName="description"  class="description" type="text" placeholder="Enter description here">
+        <h2>When are you available?</h2>
+        <input formControlName="availability" type="text" placeholder="i.e. Mon-Fri / 9am-5pm">
     </div>
-
-    <input class="button" type="submit" >
+    <div class="inner-container">
+        <h2>How did you hear about us?</h2>
+        <input formControlName="hear" type="text" placeholder="i.e. Google, Family, Friend">
+    </div>
+    <div class="inner-container">
+        <h2>Description of Project</h2>
+        <textarea name="description" id="description" cols="30" rows="10" formControlName="description" class="description" placeholder="Enter description here">
+            Enter description here
+        </textarea>
+    </div>
+    <div class="button-container">
+        <input class="button" type="submit" >
+    </div>
 </form>
 </div>

@@ -1,6 +1,5 @@
 .container {
     position: relative;
-    top: 140px;
     width: 100%;
     height: 100%;
     display: grid;
@@ -14,6 +13,7 @@
     height: 600px;
     overflow: hidden;
     /* outline: 2px solid blue; */
+    object-fit: cover;
 }
 
 .info {
@@ -55,9 +55,8 @@ img {
     object-fit: cover;
 }
 button {
-    position: fixed;
-    top: 100px;
-    left: 0;
+    position: absolute;
+    top: 0;
     width: 100vw;
     height: 50px;
     outline: none;

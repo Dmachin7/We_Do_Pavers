@@ -7,7 +7,7 @@ import { CopingComponent } from './coping/coping.component';
 import { PlasterComponent } from './plaster/plaster.component';
 
 
-const routes: Routes = [{path: '', component: MainComponent}, {path: 'contact', component: ContactFormComponent}, {path: 'paver', component: PaverComponent}, {path: 'coping', component: CopingComponent}, {path: 'plaster', component: PlasterComponent}];
+const routes: Routes = [{path: 'contact', component: ContactFormComponent}, {path: 'paver', component: PaverComponent}, {path: 'coping', component: CopingComponent}, {path: 'plaster', component: PlasterComponent}];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

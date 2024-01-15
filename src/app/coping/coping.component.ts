@@ -35,7 +35,19 @@ export class CopingComponent implements OnInit {
 
   constructor () {}
 
+  onClose() {
+    window.scrollTo({
+      top: 1400,
+      left: 100,
+      behavior: "smooth"
+    })
+  }
+
   ngOnInit(): void {
-      window.scrollTo(0,0)
+    window.scrollTo({
+      top: 2010,
+      left: 100,
+      behavior: "smooth",
+    });
   }
 }

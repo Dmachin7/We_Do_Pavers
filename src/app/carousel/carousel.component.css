@@ -1,9 +1,9 @@
 .Carousel {
     /* background-color: coral; */
-    position: absolute;
+    /* position: absolute;
     top: 10%;
-    left: 0;
-    height: 1000px;
+    left: 0; */
+    height: 90%;
     width: 100vw;
     display: flex;
     flex-direction: row;
@@ -127,60 +127,31 @@
     transition: transform 3s ease-in-out;
   }
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 1225px) {
+
+
     .Carousel {
-        height: 100%;
-        top: 0;
+        height: 60%;
+        top: 100px;
     }
 
     .Carousel-item {
-      padding: 1rem;
+      /* padding: 1rem; */
+      padding: 0;
+      object-fit: cover;
+      margin-right: none;
     }
 
 
     .right {
       display: none;
-        height: 50px;
-        width: 50px;
-        right: 10px;
-        border-radius: 50%;
     }
 
     .left {
       display: none;
-        height: 50px;
-        width: 50px;
-        left: 10px;
-        border-radius: 50%;
+
     }
-    .notActive {
-        transform: translateX(0px);
-        transition: transform 1s ease-in-out;
-      }
-    
-      .active {
-        transform: translateX(-108vw);
-        transition: transform 1s ease-in-out;
-      }
-    
-      .active2 {
-        transform: translateX(-214vw);
-        transition: transform 1s ease-in-out;
-      }
-      .active3 {
-        transform: translateX(-322vw);
-        transition: transform 1s ease-in-out;
-      }
-    
-      .active4 {
-        transform: translateX(-432vw);
-        transition: transform 1s ease-in-out;
-      }
-    
-      .active5 {
-        transform: translateX(-538vw);
-        transition: transform 1s ease-in-out;
-      }
+ 
       .Carousel-content {
         overflow-y: hidden;
         overflow-x: scroll;
@@ -191,6 +162,7 @@
       .Carousel-item img {
         scroll-snap-align: start;
         height: 100%;
+        object-fit: cover;
       }
 
 

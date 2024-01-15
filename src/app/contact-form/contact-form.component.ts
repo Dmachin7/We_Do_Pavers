@@ -46,8 +46,7 @@ export class ContactFormComponent implements OnInit{
     description: this.form.value.description,
     });
 
-    alert("Form has been Submitted, Please allow 24-48 hours for a follow-up")
-    this.form.reset();
+    
   }
 
 }

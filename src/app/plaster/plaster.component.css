@@ -19,7 +19,7 @@
 .info {
     /* outline: 1px solid red; */
     margin: 0;
-    height: 600px;
+    height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,7 +27,7 @@
 }
 
 .info p {
-    margin: 10px;
+    margin: 0 auto;
     padding: 1rem;
     font-size: 25px;
     font-weight: 200;

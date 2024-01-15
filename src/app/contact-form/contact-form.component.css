@@ -56,6 +56,31 @@ input {
   font-weight: 100;
 }
 
+.modal {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 200px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 20px;
+    padding: 1rem;
+    border: solid 2px black;
+    display: none;
+}
+
+
+svg {
+    height: 25px;
+    width: 25px;
+    filter: invert(48%) sepia(84%) saturate(2304%) hue-rotate(88deg) brightness(125%) contrast(123%);
+}
+
 textarea {
     margin: 0 auto;
     margin-top: 5px;
@@ -124,4 +149,11 @@ h2 {
         flex-direction: column;
     }
 
+}
+
+@media screen and (max-width: 456px) {
+.modal {
+    width: 300px;
+    
+}
 }

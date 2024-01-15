@@ -17,7 +17,7 @@
 
 .info {
     /* outline: 1px solid red; */
-    height: 600px;
+    height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;

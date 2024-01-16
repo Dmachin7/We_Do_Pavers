@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-coping',
@@ -33,21 +34,17 @@ export class CopingComponent implements OnInit {
     }
   ]
 
-  constructor () {}
+  constructor (private activatedRoute: ActivatedRoute) {}
 
-  onClose() {
-    window.scrollTo({
-      top: 1400,
-      left: 100,
-      behavior: "smooth"
-    })
-  }
+
 
   ngOnInit(): void {
-    window.scrollTo({
-      top: 2010,
-      left: 100,
-      behavior: "smooth",
-    });
-  }
+    this.activatedRoute.fragment.subscribe((value) => {
+      this.jumpTo(value)
+    })
+}
+
+jumpTo(section: any) {
+  document.getElementById(section)?.scrollIntoView({behavior: 'smooth'})
+}
 }

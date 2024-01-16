@@ -11,6 +11,7 @@ export class ContactFormComponent implements OnInit{
 
   form: FormGroup 
 
+  active = "hide"
 
   constructor (private formBuilder: FormBuilder) {}
 
@@ -44,8 +45,16 @@ export class ContactFormComponent implements OnInit{
     phone_number: this.form.value.phone_number,
     address: this.form.value.address,
     description: this.form.value.description,
+    reply_to: this.form.value.from_email
     });
 
+    this.active = 'show'
+
+    setTimeout(() => {
+      this.active = 'hide'
+    }, 5000);
+
+    this.form.reset()
     
   }
 

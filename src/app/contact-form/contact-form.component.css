@@ -71,9 +71,16 @@ input {
     border-radius: 20px;
     padding: 1rem;
     border: solid 2px black;
+    /* display: none; */
+}
+
+.hide {
     display: none;
 }
 
+.show {
+    display: block;
+}
 
 svg {
     height: 25px;
